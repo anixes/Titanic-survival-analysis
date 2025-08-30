@@ -1,39 +1,42 @@
-# Titanic-survival-analysis
-An exploratory data analysis of the Titanic dataset to identify key factors influencing passenger survival.
-An exploratory data analysis of the Titanic dataset to identify the key factors that influenced passenger survival. This project involves data cleaning, feature engineering, and visualization to uncover insights from this historic event.
+Titanic Survival Analysis
+This project explores the classic Titanic dataset to uncover the key factors that determined passenger survival. The analysis is done using Python, Pandas, and Seaborn.
 
-This analysis seeks to answer the following questions:
+📂 Dataset
 
-How did socio-economic status (i.e., passenger class and fare) impact survival rates?
+Source: Kaggle / Seaborn titanic.csv
 
-- Did gender and age play a significant role, in line with the "women and children first" protocol?
+Rows: 891
 
-- What was the effect of family size on a passenger's chances?
+Columns: 15 (after feature engineering)
 
-- Is there a correlation between the port of embarkation and survival?
+📌 Objectives
 
-Analysis Workflow
-Data Cleaning: Handled missing values in the Age, Embarked, and Deck columns using median and mode imputation to prepare the dataset for analysis.
+Analyze survival rates based on gender and age.
 
-Feature Engineering: Created family_size and age_group features to enable a more nuanced analysis of passenger demographics.
+Determine the impact of passenger class and fare on survival.
 
-Visualization: Used Matplotlib and Seaborn to generate plots (bar charts, violin plots, KDEs) to visualize relationships and correlations between different passenger attributes and their survival outcome.
+Investigate the role of family size.
 
-Summary of Findings
-Gender and Age were critical: The "women and children first" protocol was strongly evident. Females had a ~75% survival rate vs. <20% for males. Children also had a significantly higher survival rate than adults.
+Assess the correlation between embarkation port and survival.
 
-Socio-Economic Status was a primary predictor: First-class passengers had the highest survival rate. The fare paid also showed a clear positive correlation with survival.
+🛠️ Tools & Libraries
 
-Small Families Fared Best: Passengers in family groups of 2-4 had a higher survival rate than those traveling alone or in large families (5+).
+Python 3
 
-Embarkation Port was a confounding variable: While Cherbourg passengers had a higher survival rate, this was primarily because a higher proportion of first-class passengers boarded from that port.
+Pandas
 
-Tools Used-
+NumPy
 
-- Python
+Matplotlib
 
-- Pandas
+Seaborn
 
-- Matplotlib & Seaborn
+📈 Key Insights
 
-- Jupyter Notebook
+Gender was the strongest predictor: Females had a ~75% survival rate, compared to under 20% for males.
+
+Wealth provided a clear advantage: First-class passengers had a much higher survival rate (~63%) than third-class passengers (~24%).
+
+Children had a higher chance of survival: The "women and children first" protocol is visible in the data.
+
+Small families were safest: Passengers traveling in groups of 2-4 had better survival odds than those traveling alone or in large families.
